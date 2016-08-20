@@ -1,0 +1,13 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule KontrolerDomeny ?s=ad
+RewriteRule KleintWindows ?s=win
+RewriteRule ProfileWędrujące ?s=profil
+RewriteRule NTP ?s=ntp
+RewriteRule Autor ?s=autor
+RewriteRule KsięgaGości ?s=ksiega

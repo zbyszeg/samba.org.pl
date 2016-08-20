@@ -1,0 +1,1 @@
+no i 5 jeszcze

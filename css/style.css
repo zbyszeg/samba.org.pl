@@ -1,0 +1,225 @@
+body
+{
+	/* Background pattern from subtlepatterns.com */
+	background-image: url("../img/grey_wash_wall.png");
+	background-attachment: fixed;
+	margin: 0 !important;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+
+#menu
+{
+	width: 100%;
+	background-color: rgb(45, 45, 45);
+	background-color: rgba(45, 45, 45, .5);
+	margin-bottom: 5px;
+	height: 42px;
+}
+
+#nav
+{
+	float: left;
+}
+
+#social
+{
+	float: left;
+	margin-left: 300px;
+}
+
+#fb
+{
+	float: left;
+	opacity: .5;
+}
+
+#fb > a
+{
+	color: white;
+}
+
+#fb:hover
+{
+	cursor: pointer;
+	opacity: 1;
+	background-color: #3b5998;
+}
+
+#tw
+{
+	float: left;
+	opacity: .5;
+}
+
+#tw > a
+{
+	color: white;
+}
+
+#tw:hover
+{
+	cursor: pointer;
+	opacity: 1;
+	background-color: #33CCFF;
+}
+
+#gp
+{
+	float: left;
+	opacity: .5;
+}
+
+#gp > a
+{
+	color: white;
+}
+
+#gp:hover
+{
+	cursor: pointer;
+	opacity: 1;
+	background-color: #C63D2D;
+}
+
+#mail
+{
+	float: left;
+	opacity: .5;
+}
+
+#mail > a
+{
+	color: white;
+}
+
+#mail:hover
+{
+	cursor: pointer;
+	opacity: 1;
+	background-color: rgb(45, 45, 45);
+}
+
+#dom
+{
+	float: left;
+	opacity: .5;
+}
+
+#dom > a
+{
+	color: white;
+}
+
+#dom:hover
+{
+	cursor: pointer;
+	opacity: 1;
+	background-color: #3B0202;
+}
+
+#ln
+{
+	float: left;
+	opacity: .5;
+}
+
+#ln > a
+{
+	color: white;
+}
+
+#ln:hover
+{
+	cursor: pointer;
+	opacity: 1;
+	background-color: #4875B4;
+}
+
+#samba
+{
+	float: right;
+	margin-right: 5px;
+}
+
+#samba > a > img
+{
+	height: 42px;
+}
+
+#kontener
+{
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5px;
+	min-height: 850px;
+}
+
+#lewy
+{
+	width: 250px;
+	float: left;
+	background-color: rgb(45, 45, 45);
+	background-color: rgba(45, 45, 45, .5);
+	padding: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+	color: white;
+	font-family: 'Hind', sans-serif;
+}
+
+#lewy > a
+{
+	color: white;
+}
+
+#lewy > a:hover
+{
+	color: gray;
+	text-decoration: underline overline;
+}
+
+#main
+{
+	width: 925px;
+	float: left;
+	background-color: white;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: justify;
+}
+
+#stopka
+{
+	width: 100%;
+	background-color: rgb(45, 45, 45);
+	background-color: rgba(45, 45, 45, .5);
+	color: lightgray;
+	margin-top: 5px;
+	padding: 5px 0px 5px 0px;
+}
+
+ul > li
+{
+	list-style-type: none;
+	border-bottom: solid 1px;
+	color: white;
+}
+
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+td
+{
+   border: 1px solid black;
+   font-size: 12px;
+   width: 100px;
+   text-align: left;
+}

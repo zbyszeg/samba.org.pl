@@ -1,0 +1,1 @@
+tekst z pliku 3 ha ha 

@@ -1,0 +1,1 @@
+no i 4 na koniec

@@ -1,0 +1,31 @@
+<?php
+	$adres = strval($_SERVER['REMOTE_ADDR']);
+	$adres = strtr($adres,".",":");
+	$adresy = explode(":",$adres);
+	$plik_licznika = "licznik.txt";
+
+	if(!file_exists($plik_licznika))
+	{
+		exec("/bin/echo 1 > $plik_licznika");
+	}
+	
+	$plik = fopen($plik_licznika, "r+");
+	$liczba_odwiedzin = fgets($plik, 10);
+
+	if ( $adresy[0]!=192 && $adresy[1]!=168 )
+	{
+		$liczba_odwiedzin += 1;
+		fseek($plik, 0);
+		fwrite($plik, $liczba_odwiedzin, 10);
+		fclose($plik);
+	}
+	
+	$str = strval($liczba_odwiedzin);
+	$liczba_cyfr = strlen($str)-1;
+	$i = 0;
+	
+	do {
+		echo "<img src=cyfry/$str[$i].gif>";
+		$i++;
+	} while ($i <= $liczba_cyfr);
+?>
