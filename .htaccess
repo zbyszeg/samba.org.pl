@@ -8,6 +8,7 @@ RewriteEngine on
 RewriteRule KontrolerDomeny ?s=ad
 RewriteRule KleintWindows ?s=win
 RewriteRule ProfileWędrujące ?s=profil
+RewriteRule KlientLinux ?s=linux
 RewriteRule NTP ?s=ntp
 RewriteRule Autor ?s=autor
 RewriteRule KsięgaGości ?s=ksiega
