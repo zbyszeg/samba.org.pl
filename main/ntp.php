@@ -1,1 +1,1 @@
-no i 5 jeszcze
+<h1>Serwer czasu NTP</h1>

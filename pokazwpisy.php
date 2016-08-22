@@ -4,7 +4,7 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 <body>
-Księga gości
+<h1>Księga gości</h1>
 <table>
 	<tr>
 		<td><span style="font-size: 14px; font-weight: 700">Nick</span></td>
