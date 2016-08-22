@@ -42,6 +42,7 @@
 			<a href="KontrolerDomeny">Kontorler AD w systemie Debian</a><br />
 			<a href="KleintWindows">Dodanie Windows do domeny</a><br />
 			<a href="ProfileWędrujące">Profile wędrujące</a><br />
+			<a href="KlientLinux">Dodanie Linuxa do domeny</a><br />
 			<a href="NTP">Serwer czsu NTP</a><br />
 			<a href="Autor">O autorze</a><br />
 			<a href="KsięgaGości">Księga gości</a><br />
@@ -65,14 +66,25 @@
 		<div id="licznik" style="float: right; margin-right: 5px">
 			Liczba wejść na stronę:&nbsp;
 			<?php
+				$adres = strval($_SERVER['REMOTE_ADDR']);
+				$adres = strtr($adres,".",":");
+				$adresy = explode(":",$adres);
+				
 				$file= @fopen("count.dat", "c+");
-				fscanf($file, "%d", $count);
-				$count++;
-				rewind($file);
-				fputs($file, $count);
-				fclose($file);
-
-				echo $count;
+				
+				if ( $adresy[0]!=127 && $adresy[1]!=0 )
+				{
+					fscanf($file, "%d", $count);
+					$count++;
+					rewind($file);
+					fputs($file, $count);
+					fclose($file);
+				}
+				else
+				{	
+					fscanf($file, "%d", $count);
+					echo $count;
+				}
 			?>
 		</div>
 		<div style="clear: both"></div>
