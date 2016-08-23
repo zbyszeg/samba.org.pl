@@ -49,14 +49,11 @@
 		</nav>
 		<section id="main">
 			<?php
-				$page = isset($_GET['s']) ? basename($_GET['s']) : 'glowna';
+				$page = isset($_GET['s']) ? basename($_GET['s']) : 'czas';
  
 				$file = 'main/' . $page . '.php';
  
-				if(file_exists($file))
-					include $file;
-				else
-					include("czas.php");
+				include $file;
 			?>
 		</section>
 		<div style="clear: both;"></div>
