@@ -12,3 +12,4 @@ RewriteRule KlientLinux ?s=linux
 RewriteRule NTP ?s=ntp
 RewriteRule Autor ?s=autor
 RewriteRule KsięgaGości ?s=ksiega
+RewriteRule StronaGłówna ?s=czas

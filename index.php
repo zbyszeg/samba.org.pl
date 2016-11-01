@@ -25,7 +25,7 @@
 <body>
 	<div id="menu">
 		<div id="nav">
-			<div id="dom"><a href="http://localhost/samba.org.pl"><i class="icon-home"></i></a></div>
+			<div id="dom"><a href="StronaGłówna"><i class="icon-home"></i></a></div>
 			<div id="mail"><a href="mailto:zbyszek.gora@gmail.com"><i class="icon-mail-squared"></i></a></div>
 		</div>
 		<div id="social">
@@ -67,7 +67,7 @@
 				$adres = strtr($adres,".",":");
 				$adresy = explode(":",$adres);
 				
-				$file= @fopen("count.dat", "c+");
+				$file = @fopen("count.dat", "c+");
 				
 				if ( $adresy[0]!=127 && $adresy[1]!=0 )
 				{
