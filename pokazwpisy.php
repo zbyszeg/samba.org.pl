@@ -7,8 +7,8 @@
 <h1>Księga gości</h1>
 <table>
 	<tr>
-		<td><span style="font-size: 14px; font-weight: 700">Nick</span></td>
-		<td><span style="font-size: 14px; font-weight: 700">Komentarz</span></td>
+		<td style="width: 100px"><span style="font-size: 14px; font-weight: 700">Nick</span></td>
+		<td style="width: 300px"><span style="font-size: 14px; font-weight: 700">Komentarz</span></td>
 	</tr>
 	<?php
 		$plik = file("dane.dat");

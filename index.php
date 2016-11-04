@@ -51,7 +51,7 @@
 			<?php
 				$page = isset($_GET['s']) ? basename($_GET['s']) : 'czas';
  
-				$file = 'main/' . $page . '.php';
+				$file = 'main/'.$page.'.php';
  
 				include $file;
 			?>
